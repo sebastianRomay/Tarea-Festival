@@ -1,0 +1,289 @@
+/* @keyframes respiracion {
+    0% {
+        -webkit-box-shadow: 0px 0px 35px 10px rgb(176 90 176);
+        -moz-box-shadow: 0px 0px 35px 10px rgba(176, 90, 176, 1);
+        box-shadow: 0px 0px 35px 10px rgb(176 90 176);
+    }
+    50% {
+        -webkit-box-shadow: 0px 0px 45px 15px rgb(176 90 176);
+        -moz-box-shadow: 0px 0px 45px 15px rgba(176, 90, 176, 1);
+        box-shadow: 0px 0px 45px 15px rgb(176 90 176);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 35px 10px rgb(176 90 176);
+        -moz-box-shadow: 0px 0px 35px 10px rgba(176, 90, 176, 1);
+        box-shadow: 0px 0px 80px 10px rgb(176 90 176);
+    }
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.portada {
+    width: 100%;
+    height: 80%;
+    background-image: url('/img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+.portada h1 {
+    margin-left: 25px;
+    color: white;
+    z-index: 2;
+    font-size: 6em;
+    font-family: 'Staatliches', cursive;
+    text-shadow: 2px 2px 3px red;
+    margin-bottom: 0;
+}
+
+.portada p {
+    margin-top: 0%;
+    margin-left: 25px;
+    color: rgba(250, 250, 250, 0.5);
+    z-index: 2;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.portada p:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(250, 250, 250, 1);
+    transition-duration: 0.8s;
+}
+
+.portada-opacidad {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lista-navegacion {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.lista-navegacion li {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    color: white;
+    font-size: 1.1em;
+    /* text-shadow: 1px 1px 2px red; */
+    padding: 5px;
+}
+
+.lista-navegacion li:hover {
+    /* color: #FF4A4A; */
+    cursor: pointer;
+    background-color: rgba(250, 250, 250, 0.2);
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-quienes-somos {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-quienes-somos {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    padding: 2%;
+    background: linear-gradient(grey, white, white)
+}
+
+.titulo-seccion {
+    font-size: 2em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+}
+
+.parrafo-quienes-somos {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.bandas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.card-banda {
+    border-radius: 20px;
+    width: 25%;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    margin: 20px;
+    background: white;
+}
+
+.card-banda img {
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* filter: grayscale(90); */
+    object-position: top;
+}
+
+.card-banda h3 {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card-banda p {
+    text-align: center;
+    line-height: 2rem;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-banda:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-contacto {
+    width: 40%;
+    /* border-radius: 20px; */
+    padding: 30px;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-contacto h2 {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+}
+
+.container-input {
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-input input {
+    width: 80%;
+}
+
+.container-btn {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+button {
+    text-decoration: none;
+    padding: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #1883ba;
+    border-radius: 6px;
+    /* border: 2px solid #0016b0; */
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 1em;
+}
+
+.container-icons i {
+    color: white;
+    font-size: 2em;
+    margin: 0px 10px;
+}
+
+.icon-facebook:hover {
+    color: #3b5998;
+    cursor: pointer;
+}
+
+.icon-twitter:hover {
+    color: #1da1f2;
+    cursor: pointer;
+}
+
+.icon-instagram:hover {
+    color: #5851db;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card-quienes-somos {
+        width: 60%;
+    }
+}
+
+@media (min-width: 300px) and (max-width:767px) {
+    .card-quienes-somos {
+        width: 80%;
+    }
+}
